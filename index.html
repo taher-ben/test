@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Login</title>
+  <!-- cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="loginForm">
+    <label for="email">Email:</label>
+    <input type="text" id="email" value="admin@showmore.ly" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" value="secret" name="password" required>
+
+    <button type="button" onclick="login()">Login</button>
+  </form>
+
+  <div id="dataContainer" style="display: none;">
+    <h2>Protected Data</h2>
+    <p id="data"></p>
+  </div>
+
+
+  <script src="js.js"></script>
+</body>
+</html>
